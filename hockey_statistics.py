@@ -73,7 +73,7 @@ commands:
         print(f"read the data of {len(players)} players")
         self.__statistics = Statistics(players)
  
-    def get_playes(self):
+    def get_players(self):
         name = input("name: ")
         player = self.__statistics.player_data(name)
         if player:
@@ -116,7 +116,7 @@ commands:
             if command == "0":
                 return
             elif command == "1":
-                self.get_playes()
+                self.get_players()
             elif command == "2":
                 self.get_teams()
             elif command == "3":
